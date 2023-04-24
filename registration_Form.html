@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <script src="bootstrap/js/bootstrap.js"></script> 
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(img/first.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .menu{
+  position:relative;
+  width:90%;
+  z-index:9999;
+  }
+
+  #navv{
+    right: 0px;
+  }
+  .my-navbar{
+  width:100%;
+  padding:20px 20px;
+  background-color: #FB8A02;
+  position:absolute;
+  top:20px;
+  left:0;
+  z-index:999;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .nav-item .nav-link{
+  font-family:'Oswald', sans-serif;
+  font-size:15px;
+  font-weight:300;
+  text-transform:uppercase;
+  margin:0px 10px;
+  position:relative;
+  color:black;
+  }
+  
+  .nav-item .nav-link:before{
+  position:absolute;
+  left:0;
+  content:"";
+  bottom:0;
+  width:100%;
+  height:2px;
+  transform:scaleX(0);
+  transform-origin:left;
+  background-color:brown;
+  transition:0.5s;
+  }
+  
+  
+    .nav-item .nav-link:hover:before{
+	  transform:scaleX(1);
+  transform-origin:right;
+	}
+	.navbar-brand{
+	text-transform:capitalize;
+	color:#2f3542;
+	font-style:italic;
+	font-family:'Oswald', sans-serif;
+	font-weight:bold;
+    width: 190px;
+    height: 80px;
+	}
+	
+	.navbar-scroll{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:rgba(255,138,0,1);
+	padding:5px 20px;
+	transition:0.5s;
+	animation:scroll 0.6s 1;
+	}
+	
+	@keyframes scroll{
+	0%{transform:translateY(-100%);}
+	100%{transform:translateY(0%);}
+	}
+        h1{
+            font-size: 40px;
+            color: white;
+            margin-top: 250px;
+        }
+        p{
+            font-size: 17px;
+            color: white;
+        }
+        h3{
+            font-size: 25px;
+            color: white;
+        }
+        .col-md-5{
+            margin-top: 200px;
+            margin-left: 400px;
+            box-shadow: -1px 1px 60px 10px black;
+            background: rgb(0,0,0,0.4);
+        }
+        .lable{
+            font-weight: normal;
+            margin-top: 15px;
+            color: white;
+            font-size: 19px;
+        }
+        .form-control{
+            background: transparent;
+            border-radius: 0px;
+            border: 0px;
+            border-bottom: 1px solid white;
+            font-size: 18px;
+            margin-top: 15px;
+            height: 40px;
+            color: white;
+        }
+        input[type="checkbox"]{
+            margin-top: 15px;
+            width: 15px;
+            height: 15px;
+        }
+        small{
+            font-size: 18px;
+            color: white;
+        }
+        input[type="radio"]{
+            margin-top: 22px;
+        }
+        .btn-info{
+            margin-top: 20px;
+            font-size: 18px;
+            width: 120px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+        .btn-warning{
+            margin-top: 20px;
+            font-size: 18px;
+            width: 120px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid menu">
+        <nav class="navbar navbar-expand-lg my-navbar">
+      <img src="img/yan taxi.jpg" alt="Picture Not Found" class="navbar-brand">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto" id="navv">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vehicle</a>
+          </li>
+      
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>-->
+          
+            <li class="nav-item">
+            <a class="nav-link" href="#">Order now</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+      </div>
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-5">
+                <form name="registration" action="http://localhost:8081/users" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-left">Registration Form</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <label class="lable col-md-2 control-lable">Name</label>
+                        <div class="col-md-10">
+                            <input type="name" class="form-control" name="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="lable col-md-2 control-lable">Address</label>
+                        <div class="col-md-10">
+                            <input type="address" class="form-control" name="address" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="lable col-md-2 control-lable">E-mail</label>
+                        <div class="col-md-10">
+                            <input type="Email" class="form-control" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="lable col-md-2 control-lable">Password</label>
+                        <div class="col-md-10">
+                            <input type="Password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    
+                    
+                    <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
+                    <a href="#"><div class="btn btn-info">Submit</div></a>
+                    <a href="#"><div class="btn btn-warning">Cancel</div></a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+  /*  const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  fetch('http://example.com/microservice', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })*/
+
+</script>
+</html>

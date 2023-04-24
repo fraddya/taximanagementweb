@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <script src="bootstrap/js/bootstrap.js"></script> 
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: 'Josefin Sans', sans-serif;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #191919;
+            }
+            .about{
+                width: 100%;
+                padding: 78px 0px;
+                background-color: #191919;
+            }
+            .about img{
+                height: auto;
+                width: 420px;
+            }
+            .about-text{
+                width: 550px;
+            }
+            .main{
+                width: 1130px;
+                max-width: 95%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .about-text h1{
+                color: white;
+                font-size: 80px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+            .about-text h5{
+                color: white;
+                font-size: 25px;
+                text-transform: capitalize;
+                margin-bottom: 25px;
+                letter-spacing: 2px;
+            }
+            span{
+                color: #f9004d;
+            }
+            .about-text p{
+                color: #fcfc;
+                letter-spacing: 1px;
+                line-height: 28px;
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+
+            .menu{
+  position:relative;
+  width:90%;
+  z-index:9999;
+  }
+
+  #navv{
+    right: 0px;
+  }
+  .my-navbar{
+  width:100%;
+  padding:20px 20px;
+  background-color: #FB8A02;
+  position:absolute;
+  top:20px;
+  left:0;
+  z-index:999;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .nav-item .nav-link{
+  font-family:'Oswald', sans-serif;
+  font-size:15px;
+  font-weight:300;
+  text-transform:uppercase;
+  margin:0px 10px;
+  position:relative;
+  color:black;
+  }
+  
+  .nav-item .nav-link:before{
+  position:absolute;
+  left:0;
+  content:"";
+  bottom:0;
+  width:100%;
+  height:2px;
+  transform:scaleX(0);
+  transform-origin:left;
+  background-color:brown;
+  transition:0.5s;
+  }
+  
+  
+    .nav-item .nav-link:hover:before{
+	  transform:scaleX(1);
+  transform-origin:right;
+	}
+	.navbar-brand{
+	text-transform:capitalize;
+	color:#2f3542;
+	font-style:italic;
+	font-family:'Oswald', sans-serif;
+	font-weight:bold;
+    width: 190px;
+    height: 80px;
+	}
+	
+	.navbar-scroll{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:rgba(255,138,0,1);
+	padding:5px 20px;
+	transition:0.5s;
+	animation:scroll 0.6s 1;
+	}
+	
+	@keyframes scroll{
+	0%{transform:translateY(-100%);}
+	100%{transform:translateY(0%);}
+	}
+         
+  
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: black !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #ff8a00;
+    border-color: #ff8a00;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff8a00;
+    border-color: #ff8a00;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #ff8a00;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #ff8a00 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #ff8a00 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid menu">
+    <nav class="navbar navbar-expand-lg my-navbar">
+  <img src="img/yan taxi.jpg" alt="Picture Not Found" class="navbar-brand">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav m-auto" id="navv">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.php">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="home.php/#vehiheder">Vehicle</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="order.php">Order now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="orderhistory.php">Order History</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About us</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  </div>
+          <br><br> <br><br> <br><br>
+        <section class="about">
+            <div class="main">
+                <img src="img/aboutus.jpg">
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <h5>Developr <span>& Designer</span></h5>
+                    <p>Picktome & Tours is the most popular, reliable, safety and comfortable tourist taxi Services Company in Sri Lanka.We are offering our high quality, comfortable and reliable on time taxi services and tours by using variety of vehicle categories with professional safety drivers. We have new budget air condition cars, Luxury comfortable new air condition cars, and comfortable dual air condition vans and aircondition Toyota coaster new buses.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="team" class="pb-5">
+          <div class="container">
+              <h5 class="section-title h1">OUR TEAM</h5>
+              <div class="row">
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <!-- Team member  need to add-->
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="img/fraddya.jpeg" alt="card image"></p>
+                                          <h4 class="card-title">Team Leader</h4>
+                                          <p class="card-text">S.S. Liyanage  MADSE21.2F-018 <br> Contact No:- +94 765521740</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">S.S. Liyanage</h4>
+                                          <p class="card-text">Design Home page with link other page, create order form font end back end, design order history page </p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      
+                      
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="img/nadiya.jpeg" alt="card image"></p>
+                                          <h4 class="card-title">Member</h4>
+                                          <p class="card-text">A.T.N. Ruwandima MADSE21.2F-019</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">A.T.N. Ruwandima</h4>
+                                          <p class="card-text">Create registration_Form with Font end , back end with sql database also validate form</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="img/savidu.jpeg" alt="card image"></p>
+                                          <h4 class="card-title">Member</h4>
+                                          <p class="card-text">B.M.G.S.S.Gamage MADSE21.2F-004</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">B.M.G.S.S.Gamage</h4>
+                                          <p class="card-text">Create Login page with Font End and back end and validate Form also create services Form Font end</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="img/banuka.jpeg" alt="card image"></p>
+                                          <h4 class="card-title">Member</h4>
+                                          <p class="card-text">P.B.S. Prabhath MADSE21.2F-012</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">P.B.S. Prabhath</h4>
+                                          <p class="card-text">Create About Us form font end , create sql order table and cancelorder form back end</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+      
+              </div>
+          </div>
+      </section>
+
+
+        <footer>
+            <img src="img/fotter.png" alt="picture not found" class="fotterimg">
+          </footer>
+          <script>
+            $(document).ready(function(){
+      $(window).scroll(function(){
+      if($(window).scrollTop() > 60 ){
+      $('.my-navbar').addClass('navbar-scroll');
+      }
+      else{
+      $('.my-navbar').removeClass('navbar-scroll');
+      }
+      });
+      });
+          </script>
+    </body>
+</html>
